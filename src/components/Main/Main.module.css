@@ -1,0 +1,90 @@
+.summary {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.summary h1 {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.mainImage {
+  padding-left: 20px;
+}
+
+.mainImage img {
+  max-width: 100%;
+}
+
+.summary div {
+  display: flex;
+  gap: 15px;
+}
+
+.main {
+  display: flex;
+  background: #fff;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.summary summary {
+  flex-grow: 0.6;
+}
+
+.phoneImage {
+  display: none;
+}
+
+.backdrop {
+  background: rgba(0, 0, 0, 0.692);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin: -10px -140px;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+  }
+  .mainImage {
+    display: none;
+  }
+
+  .phoneImage {
+    display: block;
+  }
+
+  .phoneImage img {
+    width: 100vw;
+  }
+
+  .summary {
+    padding: 10px;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .summary summary {
+    flex-grow: 0.6;
+    text-align: center;
+  }
+
+  .summary h1 {
+    display: contents;
+  }
+
+  .backdrop {
+    margin: -10px 0;
+  }
+}

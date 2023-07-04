@@ -1,0 +1,16 @@
+.card {
+  background: #ffffff;
+  display: flex;
+  max-width: 30%;
+  position: absolute;
+  transform: translate(50%, 20%);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    transform: translate(10%, -50%);
+    max-width: 80%;
+  }
+}

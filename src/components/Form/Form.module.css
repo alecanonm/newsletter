@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+}
+
+.form label {
+  color: hsl(234, 29%, 20%);
+  font-weight: 600;
+}
+
+.form Button {
+  margin-top: 20px;
+}
+
+form input {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1.5px solid #808080;
+  outline: none;
+}
+
+.inputError {
+  background-color: rgba(255, 0, 0, 0.276);
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.labels label + label {
+  color: red;
+  font-weight: 300;
+}
